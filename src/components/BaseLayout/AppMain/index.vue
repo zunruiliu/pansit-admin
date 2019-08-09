@@ -10,6 +10,7 @@
     </div>
     <div class=" limit-container-width">
       <div class="content">
+
         <transition name="fade" mode="out-in">
           你好
         </transition>
@@ -25,10 +26,11 @@ export default {
 
 <style scoped>
   .content-wrapper {
-    width: 100%;
-    transition: padding 0.3s;
+    width: calc(100% - 230px);
+    transition:  width 0.3s, left 0.3s;
     margin-top: 80px;
     padding-bottom: 100px;
+    margin-left: 230px;
 }
 .content-wrapper .container-fluid {
     padding: 0 16px;
