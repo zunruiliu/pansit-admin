@@ -1,15 +1,18 @@
 <template>
   <div>
     <pHeaderBar />
-    <pSideBar />
-    <pAppMain />
+    <section style="height:calc(100vh - 48px); display:flex;" class="main-container">
+      <pSideBar />
+      <pAppMain />
+    </section>
   </div>
 </template>
 
 <script>
 import pSideBar from '@/components/BaseLayout/SideBar'
-import pHeaderBar from '@/components/BaseLayout/HeaderBar'
 import pAppMain from '@/components/BaseLayout/AppMain'
+import pHeaderBar from '@/components/BaseLayout/HeaderBar'
+
 export default {
   components: {
     pHeaderBar,
@@ -20,5 +23,4 @@ export default {
 </script>
 
 <style>
-
 </style>
